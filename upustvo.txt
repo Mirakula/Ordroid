@@ -1,0 +1,5 @@
+Dodana opcija za skeniranje barcoda.
+Potrebno je instalirati zxing skener te nakon toga pokrenuti aplikaciju ordroid.
+
+Glavni projekat je Ordroid, importuje se u Eclipse, te se importuju projekti koji su mu potrebni za rad. Nakon imprtovanja glavnog projekta prikažu se greške, tj. koji projekti fale. Na osnovu tih grešaka imprtovati ostale projekte koji se nalazi u folderu OrderCom istog direktorija.
+U configu je definisan minimalan SDK koji se koristi i preporucujem da se on koristi. 

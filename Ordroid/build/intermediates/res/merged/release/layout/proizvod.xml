@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#CCFFCC"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_button" >
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Naziv" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNazivProizvoda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:text=""
+        android:textColor="#000CAD" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_button" >
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EAN kod" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvEANkod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:text=""
+        android:textColor="#000CAD" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_button"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Cijena"
+            android:gravity="left" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="MLP cijena"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/tvCijenaProizvoda"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp"
+            android:text=""
+            android:textColor="#000CAD" />
+
+        <TextView
+            android:id="@+id/tvMaloprodajnaCijenaProizvoda"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:paddingBottom="7dp"
+            android:paddingRight="15dp"
+            android:paddingTop="7dp"
+            android:text=""
+            android:textColor="#000CAD" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_button" >
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stanje" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvStanjeProizvoda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:text=""
+        android:textColor="#000CAD" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/btnNazadProizvodi1"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/red_button"
+            android:text="Zatvori" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/OrdroidPath/TLPTCRDN/Ordroid/res/layout/proizvod.xml -->

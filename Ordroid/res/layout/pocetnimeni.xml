@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFFCC"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zaglavlje" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MENI"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.2" >
+
+        <Button
+            android:id="@+id/btnNarudzbe"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/green_button"
+            android:text="Narudžbe" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.2" >
+
+        <Button
+            android:id="@+id/btnKupci"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/blue_button"
+            android:text="Kupci" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.2" >
+
+        <Button
+            android:id="@+id/btnProizvodi"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/blue_button"
+            android:text="Proizvodi" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.2" >
+
+        <Button
+            android:id="@+id/btnUcitavanjePodataka"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/yellow_button"
+            android:text="Učitaj podatke sa servera" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.2" >
+
+        <Button
+            android:id="@+id/btnOdjava1"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/red_button"
+            android:text="Odjava" />
+    </LinearLayout>
+
+</LinearLayout>

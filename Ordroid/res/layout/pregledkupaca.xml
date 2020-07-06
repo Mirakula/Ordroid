@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFFCC"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zaglavlje" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PREGLED KUPACA"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.3"
+            android:paddingLeft="10dp"
+            android:text="Prodajni program:"
+            android:textColor="#000CAD" />
+
+        <Spinner
+            android:id="@+id/sProdajniProgrami"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:background="@drawable/blue_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_button" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kupac" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvKupci"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.5"
+        android:divider="#f00"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_button" >
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mjesto isporuke" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvMjestaIsporuke"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.5"
+        android:divider="#f00"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btnNazadKupci"
+        style="@style/ButtonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_button"
+        android:text="Nazad" />
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CCFFCC"
+    android:orientation="vertical"
+    android:padding="10sp" >
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/noActivityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Trenutna IP adresa servera"
+        android:textColor="#000CAD" />
+
+    <EditText
+        android:id="@+id/txtStaraIpAdresa"
+        style="@style/ButtonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_button"
+        android:enabled="false"
+        android:inputType="textPersonName" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/noActivityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Unesi IP adresu"
+            android:textColor="#000CAD" />
+
+        <EditText
+            android:id="@+id/txtIpAdresa"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yellow_button"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnIzaberi"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/green_button"
+            android:text="Potvrdi" />
+
+        <Button
+            android:id="@+id/btnOdustani"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_button"
+            android:text="Odustani" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/OrdroidPath/TLPTCRDN/Ordroid/res/layout/postavke.xml -->

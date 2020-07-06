@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.comp.aktivnosti"
+    android:versionCode="2"
+    android:versionName="2.1">
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        tools:node="replace"
+        android:icon="@drawable/ordroid"
+        android:label="@string/app_name" >       
+        <activity
+            android:name=".OrdroidActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="PostavkeAktivnost" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="PocetnaAktivnost" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="NarucivanjeAktivnost" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="NovaNarudzbaAktivnost" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="PregledZakljucenihAktivnost" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="NarudzbaAktivnost" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="UcitavanjePodatakaAktivnost" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="PregledKupacaAktivnost" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="PregledProizvodaAktivnost" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="PregledPoslatihAktivnost" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="NaruceniProizvodiAktivnost" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="PrikaziAlarmAktivnost" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"></activity>
+        <activity android:name="MenuActivity" android:theme="@android:style/Theme.Light.NoTitleBar" android:screenOrientation="portrait"></activity>
+
+    </application>
+</manifest>

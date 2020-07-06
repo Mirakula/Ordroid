@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inner_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFFCC"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zaglavlje" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOVA NARUDŽBA"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zaglavlje" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kupac"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tvNazivIzabraneFirme"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.25"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <org.comp.klase.MeniDugme
+            android:id="@+id/btnMeniProgram1"            
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:textColor="#fff"
+            android:background="@drawable/dugmemeni"
+            android:text="P. P."></org.comp.klase.MeniDugme>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:orientation="vertical"
+            android:weightSum="1.0" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.7"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:weightSum="1.0" >
+
+                <Button
+                    android:id="@+id/button1"
+                    style="@style/ButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/yellow_button1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@style/ButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/yellow_button1"
+                    android:text="Button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:weightSum="1.0" >
+
+                <Button
+                    android:id="@+id/button2"
+                    style="@style/ButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/yellow_button1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button4"
+                    style="@style/ButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/yellow_button1"
+                    android:text="Button" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/button5"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/red_button1"
+            android:text="Nazad" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blue_button"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/ButtonText1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:text="Naziv proizvoda" />
+
+        <EditText
+            android:id="@+id/txtUkupnanIznos"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="#fff"
+            android:gravity="right"
+            android:inputType="numberDecimal"
+            android:textColor="#f00" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/ButtonText1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="right"
+            android:text="Količina" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvArtikli111"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.75"
+        android:divider="#f00"
+        android:dividerHeight="1dp"
+        android:longClickable="false">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_marginLeft="-2dp">
+
+        <Button
+            android:id="@+id/btnNazad15"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.26"
+            android:background="@drawable/red_button"
+            android:text="Odustani" />
+
+        <Button
+            android:id="@+id/btnPregledNarucenihStavki"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:background="@drawable/yellow_button"
+            android:text="Stavke" />
+
+        <Button
+            android:id="@+id/btnPrihvatiStavke"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:background="@drawable/green_button"
+            android:text="Prihvati" />
+
+        <Button
+            android:id="@+id/btnZakljuci"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:background="@drawable/blue_button"
+            android:text="Zaključi" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/OrdroidPath/TLPTCRDN/Ordroid/res/layout/novanarudzba.xml -->

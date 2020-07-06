@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/OrdroidPath/TLPTCRDN/Ordroid/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="dokument">
+	    <item>Maloprodaja</item>
+        <item>Veleprodaja</item>        
+     </string-array>
+    <string-array name="placanje">
+        <item>Gotovina</item>
+        <item>Virman</item>
+     </string-array>
+    <string name="app_name">OrderCom</string>
+    <string name="hello">Hello World, OrdroidActivity!</string>
+    <string name="meniAkcijskiPopusti">Akcijski popusti</string>
+    <string name="meniProgrami">Programi</string>
+    <string name="meniZaglavlje">Zaglavlje dokumenta</string>
+    <!-- From: file:/D:/OrdroidPath/TLPTCRDN/Ordroid/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="android:Theme.Light"/>
+    <!-- From: file:/D:/OrdroidPath/TLPTCRDN/Ordroid/res/values/strings.xml -->
+    <eat-comment/>
+    <style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    <style name="ButtonText1">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+    </style>
+    <style name="RaddioButton1">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:shadowColor">#000000</item>
+    </style>
+    <!-- From: file:/D:/OrdroidPath/TLPTCRDN/Ordroid/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Theme.Transparent" parent="android:Theme">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+    <!-- From: file:/D:/OrdroidPath/TLPTCRDN/Ordroid/res/values/strings.xml -->
+    <eat-comment/>
+    <style name="noActivityText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#a276eb</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#6a3ab2</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  	 
+  	 <item android:id="@+id/meniZaglavlje"
+           android:title="@string/meniZaglavlje"/>
+     
+</menu><!-- From: file:/D:/OrdroidPath/TLPTCRDN/Ordroid/res/menu/mainmenu.xml -->

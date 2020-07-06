@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1.0"
+    android:orientation="horizontal"
+    android:background="#CCFFCC"
+    android:paddingTop="5dp"
+    android:paddingLeft="7dp"
+    android:paddingBottom="5dp" >
+
+    <LinearLayout 
+        android:layout_width="0dip"
+        android:layout_weight="0.54"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+        android:id="@+id/tvNazivFirme12"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text=""
+        android:textColor="#000cad"
+            android:layout_margin="1dp"
+            android:textSize="10dp" />
+        <TextView
+        android:id="@+id/tvNazivMisa12"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text=""
+        android:textColor="#006442"
+            android:layout_margin="1dp"
+            android:textSize="8.7dp" />
+    </LinearLayout>
+    
+     <TextView
+        android:id="@+id/tvTipNarudzbe12"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:text=""
+         android:textColor="#000cad"
+        android:layout_weight="0.1"
+         android:layout_marginTop="8.5dp"
+         android:layout_marginRight="3dp"
+         android:textSize="12dp"
+         android:gravity="right" />
+    
+    <TextView
+        android:id="@+id/tvVrijeme12"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000cad"
+        android:gravity="right"
+        android:layout_weight="0.17"
+        android:layout_marginTop="8.5dp"
+        android:layout_marginRight="2dp"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvIznosNarudzbe12"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="right"
+        android:textColor="#f00"
+        android:layout_weight="0.18"
+        android:layout_marginTop="8.5dp"
+        android:layout_marginRight="3dp"
+        android:textSize="12dp" />
+
+</LinearLayout>

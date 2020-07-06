@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFFCC"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zaglavlje" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STAVKE NARUDŽBE"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_button"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/tvNaziv11"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.47"
+            android:text="Naziv"
+            android:textColor="#fff" />
+        
+        <TextView
+            android:id="@+id/tvKolicina11"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.18"
+            android:text="Kol."
+            android:textColor="#fff"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/tvCijena11"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.205"
+            android:text=" Cijena"
+            android:textColor="#fff"
+            android:gravity="center" />
+        
+
+        <TextView
+            android:id="@+id/tvIznos11"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:text="Iznos"
+            android:textColor="#fff"
+            android:gravity="right" />
+        <TextView
+            android:id="@+id/tvIznos116"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="right"
+            android:textColor="#fff"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:divider="#f00"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:gravity="bottom" >
+
+
+            <Button
+                android:id="@+id/btnZatvori"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_button"
+                android:layout_weight="0.3"
+                android:text="Nazad"
+                style="@style/ButtonText" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="vertical"
+            android:weightSum="1.0"
+            android:background="@drawable/blue_button" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="Suma:"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tvUkupnaVrijednost"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="Popust:"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tvPopust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="right"
+                    android:textColor="#fff"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="PDV:"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tvPDV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="right"
+                    android:textColor="#fff"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="Ukupno:"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tvZaPlatiti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="right"
+                    android:textColor="#fff"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

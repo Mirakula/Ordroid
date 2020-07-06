@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFFCC"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zaglavlje" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NARUDŽBE"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:background="@drawable/black_button" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.57"
+            android:text="Kupac"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/textView88"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="Tip"
+            android:textColor="#fff"
+            android:layout_marginRight="3dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.185"
+            android:gravity="center"
+            android:text="Vrijeme"
+            android:textColor="#fff"
+            android:layout_marginRight="3dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:text="Iznos"
+            android:textColor="#fff"
+            android:layout_marginRight="3dp"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvOtvorene"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:divider="#f00"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ukupno"
+            android:textColor="#000CAD" />
+
+        <EditText
+            android:id="@+id/txtUkupanIznosOtvorene"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:background="@drawable/yellow_button"
+            android:enabled="false"
+            android:gravity="right"
+            android:inputType="numberDecimal"
+            style="@style/ButtonText" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_marginLeft="1dp">
+
+
+            <Button
+                android:id="@+id/btnNazad12"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.23"
+                android:background="@drawable/red_button"
+                style="@style/ButtonText"
+                android:text="Nazad" />
+
+            <Button
+                android:id="@+id/btnNovaNarudzba"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.23"
+                android:background="@drawable/green_button"
+                style="@style/ButtonText"
+                android:text="Nova" />
+
+            <Button
+                android:id="@+id/btnPregledZakljucenih"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:background="@drawable/blue_button"
+				android:text="Zaključene"
+				style="@style/ButtonText" />
+
+            <Button
+                android:id="@+id/btnPregledPoslatih"
+                android:layout_width="0dip"
+                android:layout_weight="0.24"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_button"
+                style="@style/ButtonText"
+                android:text="Poslane" />
+
+    </LinearLayout>
+
+</LinearLayout>

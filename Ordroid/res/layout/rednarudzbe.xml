@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#CCFFCC"
+    android:weightSum="1.0"
+    android:gravity="center_vertical"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="false">
+
+    <TextView
+        android:id="@+id/tvNazivProizvoda"
+        android:layout_width="0dip"
+        android:layout_weight="0.8"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000CAD"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tvKolicinaProizvoda"
+        android:layout_width="0dip"
+        android:layout_weight="0.2"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000CAD"
+        android:gravity="right"
+        android:layout_marginLeft="2dp"
+        android:textSize="13dp" />
+
+</LinearLayout>

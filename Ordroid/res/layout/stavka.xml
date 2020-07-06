@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CCFFCC"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="1.0" >
+
+    <TextView
+        android:id="@+id/tvNaziv111"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.44"
+        android:text=""
+        android:textColor="#000CAD"
+        android:layout_marginLeft="1dp"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvKolicina111"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.18"
+        android:text=""
+        android:textColor="#000CAD"
+        android:layout_marginLeft="2dp"
+        android:textSize="12dp"
+        android:gravity="right" />
+
+    <TextView
+        android:id="@+id/tvCijena111"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:text=""
+        android:textColor="#000CAD"
+        android:layout_marginLeft="2dp"
+        android:textSize="12dp"
+        android:gravity="right" />
+
+    <TextView
+        android:id="@+id/tvIznos111"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.18"
+        android:text=""
+        android:textColor="#000CAD"
+        android:gravity="right"
+        android:layout_marginLeft="2dp"
+        android:textSize="12dp"
+        android:layout_marginRight="2dp" />
+
+    <ImageButton
+        android:id="@+id/btnIzbrisi111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/brisi321"
+        android:layout_marginRight="-14dp" />
+
+</LinearLayout>

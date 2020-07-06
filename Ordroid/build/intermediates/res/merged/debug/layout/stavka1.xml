@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CCFFCC"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_button"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Naziv proizvoda" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtNaziv"
+        style="@style/ButtonText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:gravity="left"
+        android:textColor="#000CAD" >
+    </EditText>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_button"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/ButtonText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.34"
+            android:gravity="left"
+            android:text="Cijena" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:text="Rabat" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/ButtonText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:gravity="right"
+            android:text="Akcijski rabat" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:paddingTop="2dp">
+
+        <EditText
+            android:id="@+id/txtCijena"
+            style="@style/ButtonText1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.34"
+            android:enabled="false"
+            android:gravity="left"
+            android:textColor="#f00" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtPopust"
+            style="@style/ButtonText1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textColor="#000CAD">
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtAkcijskiPopust"
+            style="@style/ButtonText1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:gravity="right"
+            android:inputType="numberDecimal"
+            android:text="0.00"
+            android:textColor="#f00" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:orientation="vertical"
+                android:weightSum="1.0" >
+
+                <Button
+                    android:id="@+id/btnPuls100"
+                    style="@style/ButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/yellow_button"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/ButtonText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.34"
+                    android:text="100"
+                    android:textColor="#000cad" />
+
+                <Button
+                    android:id="@+id/btnMinus100"
+                    style="@style/ButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/yellow_button"
+                    android:text="-" />
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:orientation="vertical"
+                android:weightSum="1.0" >
+
+                <Button
+                    android:id="@+id/btnPlus10"
+                    style="@style/ButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/yellow_button"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/ButtonText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.34"
+                    android:text="10"
+                    android:textColor="#000cad" />
+
+                <Button
+                    android:id="@+id/btnMinus10"
+                    style="@style/ButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/yellow_button"
+                    android:text="-" />
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:orientation="vertical"
+                android:weightSum="1.0" >
+
+                <Button
+                    android:id="@+id/btnPlus1"
+                    style="@style/ButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/yellow_button"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/ButtonText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.34"
+                    android:text="1"
+                    android:textColor="#000cad" />
+
+                <Button
+                    android:id="@+id/btnMinus1"
+                    style="@style/ButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/yellow_button"
+                    android:text="-" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:weightSum="1.0"
+            android:layout_gravity="center_vertical">
+
+            <Button
+                style="@style/ButtonText"
+                android:id="@+id/btnPlus05"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.33"
+                android:background="@drawable/yellow_button"
+                android:text="+" />
+
+            <TextView
+                style="@style/ButtonText1"
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.34"
+                android:text="0.5"
+                android:textColor="#000cad" />
+
+            <Button
+                style="@style/ButtonText"
+                android:id="@+id/btnMinus05"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.33"
+                android:background="@drawable/yellow_button"
+                android:text="-" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/black_button"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="left"
+            android:text="Osnovica" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="Količina" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="right"
+            android:text="Iznos" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <EditText
+            android:id="@+id/txtCijenaSapopustima"
+            style="@style/ButtonText1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:enabled="false"
+            android:gravity="left"
+            android:textColor="#f00" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtKolicina"
+            style="@style/ButtonText1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:text="1.00"
+            android:textColor="#000cad"
+            android:numeric="decimal"
+            android:singleLine="false">
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtIznos"
+            style="@style/ButtonText1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:enabled="false"
+            android:gravity="right"
+            android:text="0.00"
+            android:textColor="#f00" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <Button
+            android:id="@+id/btnOdustaniOdStavke"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/red_button"
+            android:text="Odustani" />
+
+        <Button
+            android:id="@+id/btnSpasiStavku"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/green_button"
+            android:text="Spasi" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/OrdroidPath/TLPTCRDN/Ordroid/res/layout/stavka1.xml -->

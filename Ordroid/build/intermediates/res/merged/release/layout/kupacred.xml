@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1.0"
+    android:paddingLeft="15dp"
+    android:background="#CCFFCC" >
+
+    <TextView
+        android:id="@+id/tvNazivKupcaRed"
+        android:layout_width="0dip"
+        android:layout_weight="0.85"
+        android:layout_height="match_parent"
+        android:text=""
+        android:gravity="center_vertical"
+        android:textColor="#000cad"
+        android:background="#CCFFCC" />
+
+    <RadioButton
+        android:id="@+id/rbIzaberiKupcaRed"
+        android:layout_width="0dip"
+        android:layout_weight="0.12"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:background="#CCFFCC" />
+
+</LinearLayout><!-- From: file:/D:/OrdroidPath/TLPTCRDN/Ordroid/res/layout/kupacred.xml -->

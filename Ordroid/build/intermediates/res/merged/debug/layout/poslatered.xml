@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CCFFCC"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:weightSum="1.0" >
+
+        <LinearLayout 
+        android:layout_width="0dip"
+        android:layout_weight="0.52"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+        android:id="@+id/tvNazivFirme77"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text=""
+        android:textColor="#000cad"
+            android:layout_margin="1dp"
+            android:textSize="10dp" />
+        <TextView
+        android:id="@+id/tvNazivMisa77"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text=""
+        android:textColor="#006442"
+            android:layout_margin="1dp"
+            android:textSize="8.7dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTipNarudzbe77"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000CAD"
+        android:textSize="12dp"
+        android:layout_marginTop="8.5dp"
+        android:layout_marginRight="3dp" />
+
+    <TextView
+        android:id="@+id/tvVrijeme77"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.19"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000CAD"
+        android:textSize="12dp"
+        android:layout_marginTop="8.5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp" />
+
+    <TextView
+        android:id="@+id/tvIznosNarudzbe77"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.19"
+        android:gravity="right"
+        android:text=""
+        android:textColor="#f00"
+        android:textSize="12dp"
+        android:layout_marginTop="8.5dp"
+        android:layout_marginRight="3dp" />
+
+</LinearLayout><!-- From: file:/D:/OrdroidPath/TLPTCRDN/Ordroid/res/layout/poslatered.xml -->

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFFCC"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zaglavlje" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOVA NARUDŽBA"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:padding="10dp"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3"
+                    android:text="Prodajni program:"
+                    android:textColor="#000CAD" />
+
+                <Spinner
+                    android:id="@+id/sProdajniProgramiNarudzba"
+                    style="@style/ButtonText"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3"
+                    android:text="Kupac:"
+                    android:textColor="#000CAD" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/acKupac"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textColor="#000"
+                    android:hint="Unesite naziv kupca"
+                    android:completionThreshold="2" >
+                </AutoCompleteTextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:layout_marginLeft="-4dp">
+
+                <Button
+                    android:id="@+id/btnPodaciKupca"
+                    style="@style/ButtonText"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/blue_button"
+                    android:text="Kupac" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1.0" >
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:text="Rabat:"
+                            android:textColor="#000CAD"
+                            android:layout_marginLeft="5dp" />
+
+                        <TextView
+                            android:id="@+id/tvRabatKupac"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="#000CAD" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1.0" >
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:text="Dug:"
+                            android:textColor="#000CAD"
+                            android:layout_marginLeft="5dp" />
+
+                        <TextView
+                            android:id="@+id/tvDugKupca"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="#000cad" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3"
+                    android:text="Lokacija:"
+                    android:textColor="#000CAD" />
+
+                <Spinner
+                    android:id="@+id/sLokacijaNarudzba"
+                    style="@style/ButtonText"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3"
+                    android:text="Skladište:"
+                    android:textColor="#000CAD" />
+
+                <EditText
+                    android:id="@+id/txtSkladiste"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:hint="Unesite šifru skladišta"
+                    android:inputType="number"
+                    android:maxLength="6" >
+                </EditText>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3"
+                    android:text="Org. br. dokumenta:"
+                    android:textColor="#000CAD" />
+
+                <EditText
+                    android:id="@+id/txtOrginalniBroj"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:hint="Unesite org. br. dokumenta"
+                    android:maxLength="15" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3"
+                    android:text="Rok plaćanja:"
+                    android:textColor="#000CAD" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:orientation="vertical"
+                        android:weightSum="1.0" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="0.33"
+                            android:orientation="vertical"
+                            android:weightSum="1.0" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="0.33"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="1.0" >
+
+                            <TextView
+                                android:id="@+id/tvRokPlacanja"
+                                style="@style/ButtonText"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:enabled="false"
+                                android:textColor="#000cad" />
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:text=" dana"
+                                android:textColor="#000CAD" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="0.33"
+                            android:orientation="vertical"
+                            android:weightSum="1.0" >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:orientation="horizontal"
+                        android:weightSum="1.0" >
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical"
+                            android:weightSum="1.0" >
+
+                            <Button
+                                android:id="@+id/btnPlus10RokPlacanja"
+                                style="@style/ButtonText"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="0.33"
+                                android:background="@drawable/black_button"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="0.34"
+                                android:gravity="center"
+                                android:text="10"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="#000CAD" />
+
+                            <Button
+                                android:id="@+id/btnMinus10RokPlacanja"
+                                style="@style/ButtonText"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="0.33"
+                                android:background="@drawable/black_button"
+                                android:text="-" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:id="@+id/btnPlus1RokPlacanja"
+                                style="@style/ButtonText"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="0.33"
+                                android:background="@drawable/black_button"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="0.34"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="#000CAD" />
+
+                            <Button
+                                android:id="@+id/btnMinus1RokPlacanja"
+                                style="@style/ButtonText"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="0.33"
+                                android:background="@drawable/black_button"
+                                android:text="-" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3"
+                    android:text="Tip dokumenta:"
+                    android:textColor="#000CAD" />
+
+                <Spinner
+                    android:id="@+id/sTipDokumenta"
+                    style="@style/ButtonText"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3"
+                    android:text="Način plaćanja:"
+                    android:textColor="#000CAD" />
+
+                <Spinner
+                    android:id="@+id/sNacinPlacanja"
+                    style="@style/ButtonText"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <Button
+            android:id="@+id/btnOdustaniNarudzbu"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/red_button"
+            android:text="Odustani" />
+
+        <Button
+            android:id="@+id/btnZapocniNarudzbu"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/green_button"
+            android:text="Zaključi" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/OrdroidPath/TLPTCRDN/Ordroid/res/layout/meninovanarudzba.xml -->
